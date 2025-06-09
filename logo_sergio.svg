@@ -1,0 +1,39 @@
+<svg width="300" height="300" viewBox="44 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="flame" d="M0,-5 L2,5 L-2,5 Z" fill="orange" stroke="C" stroke-width="2"></path>
+  </defs>
+
+  <!-- Spirale esterna -->
+  <g id="galaxy-outer" class="rotate-slow">
+    <path d="M150,150 m -100,0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0" fill="none" stroke="#555" stroke-width="5" stroke-opacity="0.3"></path>
+    <use href="#flame" transform="translate(250,150) rotate(0)"></use>
+    <use href="#flame" transform="translate(222,78) rotate(45)"></use>
+    <use href="#flame" transform="translate(150,50) rotate(90)"></use>
+    <use href="#flame" transform="translate(78,78) rotate(135)"></use>
+    <use href="#flame" transform="translate(50,150) rotate(180)"></use>
+    <use href="#flame" transform="translate(78,222) rotate(225)"></use>
+    <use href="#flame" transform="translate(150,250) rotate(270)"></use>
+    <use href="#flame" transform="translate(222,222) rotate(315)"></use>
+  </g>
+
+  <!-- Spirale interna -->
+  <g id="galaxy-inner" class="rotate-reverse">
+    <path d="M150,150 m -70,0 a 70,70 0 1,0 140,0 a 70,70 0 1,0 -140,0" fill="none" stroke="#888" stroke-width="5" stroke-opacity="0.4"></path>
+    <use href="#flame" transform="translate(220,150) rotate(0)"></use>
+    <use href="#flame" transform="translate(199,101) rotate(45)"></use>
+    <use href="#flame" transform="translate(150,80) rotate(90)"></use>
+    <use href="#flame" transform="translate(101,101) rotate(135)"></use>
+    <use href="#flame" transform="translate(80,150) rotate(180)"></use>
+    <use href="#flame" transform="translate(101,199) rotate(225)"></use>
+    <use href="#flame" transform="translate(150,220) rotate(270)"></use>
+    <use href="#flame" transform="translate(199,199) rotate(315)"></use>
+  </g>
+
+  <!-- Buco nero -->
+  <circle cx="150" cy="150" r="63" fill="black"></circle>
+
+  <!-- Lettera S -->
+  <text x="150" y="170" text-anchor="middle" font-size="60" fill="white" font-family="Arial, sans-serif">
+    S
+  </text>
+</svg>
